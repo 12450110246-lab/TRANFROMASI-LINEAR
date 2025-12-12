@@ -249,9 +249,10 @@ public class TransformController {
         ScaleTransition st = new ScaleTransition(Duration.millis(600), shape);
         st.setToX(sx);
         st.setToY(sy);
-        st.setInterpolator(Interpolator.SPLINE(0.2, 0.7, 0.4, 1)); // sedikit bounce lembut
+        st.setInterpolator(Interpolator.SPLINE(0.2, 0.7, 0.4, 1)); 
 
         st.setOnFinished(e -> removeGlow(shape));
         st.play();
     }
 }
+
